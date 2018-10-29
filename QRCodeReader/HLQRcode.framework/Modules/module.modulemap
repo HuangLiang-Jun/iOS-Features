@@ -1,0 +1,11 @@
+framework module HLQRcode {
+  umbrella header "HLQRcode.h"
+
+  export *
+  module * { export * }
+}
+
+module HLQRcode.Swift {
+    header "HLQRcode-Swift.h"
+    requires objc
+}
