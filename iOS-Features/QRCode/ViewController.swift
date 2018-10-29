@@ -32,7 +32,7 @@ class ViewController: UIViewController, QRCodeReaderDelegate {
     
  
     @IBAction func makeQRCodeBtnPressed(_ sender: Any) {
-        let vc = ma.qrcodeMaker(stringValue: "006@006006")
+        let vc = ma.qrcodeMaker(stringValue: "哈囉喔")
         vc.view.backgroundColor = .white
         self.show(vc, sender: nil)
 

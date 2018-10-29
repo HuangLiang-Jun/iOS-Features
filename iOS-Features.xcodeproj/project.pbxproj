@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101D11032186DC030041427B /* EasyBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D11022186DC030041427B /* EasyBannerViewController.swift */; };
+		101D11062186DD7B0041427B /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D11052186DD7B0041427B /* Extension+UIView.swift */; };
+		101D11082186DF880041427B /* EasyBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D11072186DF880041427B /* EasyBannerTableViewCell.swift */; };
+		101D110B2186E9800041427B /* EasyBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D110A2186E9800041427B /* EasyBannerCollectionViewCell.swift */; };
 		1059FA16217EB58900CB90B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059FA15217EB58900CB90B9 /* AppDelegate.swift */; };
 		1059FA18217EB58900CB90B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059FA17217EB58900CB90B9 /* ViewController.swift */; };
 		1059FA1B217EB58900CB90B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1059FA19217EB58900CB90B9 /* Main.storyboard */; };
@@ -37,6 +41,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		101D10FF2186D8DE0041427B /* iOS-Features.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Features.entitlements"; sourceTree = "<group>"; };
+		101D11022186DC030041427B /* EasyBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBannerViewController.swift; sourceTree = "<group>"; };
+		101D11052186DD7B0041427B /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		101D11072186DF880041427B /* EasyBannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBannerTableViewCell.swift; sourceTree = "<group>"; };
+		101D110A2186E9800041427B /* EasyBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		1059FA12217EB58900CB90B9 /* iOS-Features.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Features.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1059FA15217EB58900CB90B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1059FA17217EB58900CB90B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +55,6 @@
 		1059FA21217EB58A00CB90B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		107AE8402182C8930048A64E /* KeychainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
 		107AE8422182F3A80048A64E /* HLQRCodeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HLQRCodeSDK.framework; sourceTree = "<group>"; };
-		107AE8452182FF2A0048A64E /* QRCodeReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QRCodeReader.entitlements; sourceTree = "<group>"; };
 		107AE8462183148A0048A64E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		107AE84C2183182E0048A64E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		10CDD9902181689300D7C940 /* HLLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HLLog.framework; sourceTree = "<group>"; };
@@ -65,12 +73,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101D11012186DB8D0041427B /* EasyBanner */ = {
+			isa = PBXGroup;
+			children = (
+				101D11022186DC030041427B /* EasyBannerViewController.swift */,
+				101D11092186E9520041427B /* Cell */,
+				101D11042186DC310041427B /* Utils */,
+			);
+			name = EasyBanner;
+			sourceTree = "<group>";
+		};
+		101D11042186DC310041427B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				101D11052186DD7B0041427B /* Extension+UIView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		101D11092186E9520041427B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				101D11072186DF880041427B /* EasyBannerTableViewCell.swift */,
+				101D110A2186E9800041427B /* EasyBannerCollectionViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		1059FA09217EB58900CB90B9 = {
 			isa = PBXGroup;
 			children = (
 				107AE8422182F3A80048A64E /* HLQRCodeSDK.framework */,
 				10CDD9902181689300D7C940 /* HLLog.framework */,
-				1059FA14217EB58900CB90B9 /* QRCodeReader */,
+				1059FA14217EB58900CB90B9 /* iOS-Features */,
 				1059FA13217EB58900CB90B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,15 +118,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1059FA14217EB58900CB90B9 /* QRCodeReader */ = {
+		1059FA14217EB58900CB90B9 /* iOS-Features */ = {
 			isa = PBXGroup;
 			children = (
 				107AE84A218317FD0048A64E /* Main */,
+				101D11012186DB8D0041427B /* EasyBanner */,
 				107AE848218317800048A64E /* QRCode */,
 				107AE83F2182C87D0048A64E /* Keychain */,
 				107AE849218317960048A64E /* SupportingFile */,
 			);
-			path = QRCodeReader;
+			path = "iOS-Features";
 			sourceTree = "<group>";
 		};
 		107AE83F2182C87D0048A64E /* Keychain */ = {
@@ -113,7 +149,7 @@
 		107AE849218317960048A64E /* SupportingFile */ = {
 			isa = PBXGroup;
 			children = (
-				107AE8452182FF2A0048A64E /* QRCodeReader.entitlements */,
+				101D10FF2186D8DE0041427B /* iOS-Features.entitlements */,
 				1059FA15217EB58900CB90B9 /* AppDelegate.swift */,
 				1059FA19217EB58900CB90B9 /* Main.storyboard */,
 				1059FA1C217EB58A00CB90B9 /* Assets.xcassets */,
@@ -217,7 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101D110B2186E9800041427B /* EasyBannerCollectionViewCell.swift in Sources */,
+				101D11062186DD7B0041427B /* Extension+UIView.swift in Sources */,
+				101D11032186DC030041427B /* EasyBannerViewController.swift in Sources */,
 				1059FA18217EB58900CB90B9 /* ViewController.swift in Sources */,
+				101D11082186DF880041427B /* EasyBannerTableViewCell.swift in Sources */,
 				107AE8412182C8930048A64E /* KeychainViewController.swift in Sources */,
 				1059FA16217EB58900CB90B9 /* AppDelegate.swift in Sources */,
 				107AE8472183148A0048A64E /* MainViewController.swift in Sources */,
@@ -367,15 +407,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = QRCodeReader/QRCodeReader.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "iOS-Features/iOS-Features.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FFS45S3SA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/QRCodeReader",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = QRCodeReader/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS-Features/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,15 +431,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = QRCodeReader/QRCodeReader.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "iOS-Features/iOS-Features.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FFS45S3SA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/QRCodeReader",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = QRCodeReader/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iOS-Features/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
