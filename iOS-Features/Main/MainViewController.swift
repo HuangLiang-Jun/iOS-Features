@@ -10,11 +10,11 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var mainTableView: UITableView!
-    let features = ["QRCode", "Keychain"]
+    let features = ["QRCode", "Keychain", "EasyBanner"]
     override func viewDidLoad() {
         super.viewDidLoad()
         mainTableView.tableFooterView = UIView()
-        // Do any additional setup after loading the view.
+        
     }
     
 
@@ -31,7 +31,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     // MARK: - table view delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.selectRow(at: indexPath, animated: true, scrollPosition: .none) // scrollPosition***??
+        tableView.deselectRow(at: indexPath, animated: true) // scrollPosition***??
         performSegue(withIdentifier: features[indexPath.row], sender: nil)
     }
     
