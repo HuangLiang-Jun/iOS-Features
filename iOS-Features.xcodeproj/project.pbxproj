@@ -11,6 +11,8 @@
 		101D11062186DD7B0041427B /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D11052186DD7B0041427B /* Extension+UIView.swift */; };
 		101D11082186DF880041427B /* EasyBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D11072186DF880041427B /* EasyBannerTableViewCell.swift */; };
 		101D110B2186E9800041427B /* EasyBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D110A2186E9800041427B /* EasyBannerCollectionViewCell.swift */; };
+		10311B89218C1913006024D3 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10311B88218C1913006024D3 /* BannerViewController.swift */; };
+		10311B8B218C1957006024D3 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10311B8A218C1957006024D3 /* BannerView.swift */; };
 		1059FA16217EB58900CB90B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059FA15217EB58900CB90B9 /* AppDelegate.swift */; };
 		1059FA18217EB58900CB90B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059FA17217EB58900CB90B9 /* ViewController.swift */; };
 		1059FA1B217EB58900CB90B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1059FA19217EB58900CB90B9 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		101D11052186DD7B0041427B /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		101D11072186DF880041427B /* EasyBannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBannerTableViewCell.swift; sourceTree = "<group>"; };
 		101D110A2186E9800041427B /* EasyBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		10311B88218C1913006024D3 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		10311B8A218C1957006024D3 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		1059FA12217EB58900CB90B9 /* iOS-Features.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Features.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1059FA15217EB58900CB90B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1059FA17217EB58900CB90B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 			name = Cell;
 			sourceTree = "<group>";
 		};
+		10311B87218C18DD006024D3 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				10311B88218C1913006024D3 /* BannerViewController.swift */,
+				10311B8A218C1957006024D3 /* BannerView.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
 		1059FA09217EB58900CB90B9 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				107AE84A218317FD0048A64E /* Main */,
+				10311B87218C18DD006024D3 /* Banner */,
 				101D11012186DB8D0041427B /* EasyBanner */,
 				107AE848218317800048A64E /* QRCode */,
 				107AE83F2182C87D0048A64E /* Keychain */,
@@ -253,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10311B89218C1913006024D3 /* BannerViewController.swift in Sources */,
 				101D110B2186E9800041427B /* EasyBannerCollectionViewCell.swift in Sources */,
 				101D11062186DD7B0041427B /* Extension+UIView.swift in Sources */,
 				101D11032186DC030041427B /* EasyBannerViewController.swift in Sources */,
@@ -260,6 +275,7 @@
 				101D11082186DF880041427B /* EasyBannerTableViewCell.swift in Sources */,
 				107AE8412182C8930048A64E /* KeychainViewController.swift in Sources */,
 				1059FA16217EB58900CB90B9 /* AppDelegate.swift in Sources */,
+				10311B8B218C1957006024D3 /* BannerView.swift in Sources */,
 				107AE8472183148A0048A64E /* MainViewController.swift in Sources */,
 				107AE84D2183182E0048A64E /* MainTableViewCell.swift in Sources */,
 			);

@@ -73,6 +73,32 @@ extension UIView {
         return anchors
     }
     
+    func anchorCenter(top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, topConstant: CGFloat = 0, leftConstant: CGFloat = 0, bottomConstant: CGFloat = 0, rightConstant: CGFloat = 0, widthConstant: CGFloat = 0, heightConstant: CGFloat = 0,centerX: NSLayoutXAxisAnchor? = nil) {
+        translatesAutoresizingMaskIntoConstraints = false
+        if let top = top {
+            topAnchor.constraint(equalTo: top, constant: topConstant).isActive = true
+        }
+        
+        if let left = left {
+            leftAnchor.constraint(equalTo: left, constant: leftConstant).isActive = true
+        }
+        
+        if let bottom = bottom {
+            bottomAnchor.constraint(equalTo: bottom, constant: -bottomConstant).isActive = true
+        }
+        
+        if let right = right {
+            rightAnchor.constraint(equalTo: right, constant: -rightConstant).isActive = true
+        }
+        
+        
+        if let centerX = centerX {
+            centerXAnchor.constraint(equalTo: centerX, constant: 0).isActive = true
+        }
+        
+        widthAnchor.constraint(equalToConstant: widthConstant).isActive = true
+        heightAnchor.constraint(equalToConstant: heightConstant).isActive = true
+    }
     
 }
 
