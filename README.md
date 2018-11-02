@@ -3,4 +3,5 @@
 
 * QRCode
 * Keychain
-* Simple Banner View
+* CollectionView Banner
+* ScrollView Banner
