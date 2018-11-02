@@ -230,8 +230,8 @@
                         <outlet property="mainTableView" destination="L7S-EU-XnV" id="CET-fH-CXU"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="QRCode" id="ala-y2-MbM"/>
                         <segue destination="HfS-ka-2jf" kind="show" identifier="Keychain" id="Kef-AU-xhZ"/>
-                        <segue destination="xqT-dk-clo" kind="show" identifier="SimpleBanner" id="rbM-XI-VY6"/>
-                        <segue destination="HhV-P3-jse" kind="show" identifier="Banner" id="oSc-Ua-uFj"/>
+                        <segue destination="xqT-dk-clo" kind="show" identifier="CollectionViewBanner" id="rbM-XI-VY6"/>
+                        <segue destination="HhV-P3-jse" kind="show" identifier="ScrollViewBanner" id="oSc-Ua-uFj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IE-1V-ji9" userLabel="First Responder" sceneMemberID="firstResponder"/>

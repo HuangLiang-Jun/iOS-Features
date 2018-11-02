@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var mainTableView: UITableView!
-    let features = ["QRCode", "Keychain", "CollectionView Banner", "ScrollView Banner"]
+    let features = ["QRCode", "Keychain", "CollectionViewBanner", "ScrollViewBanner"]
     override func viewDidLoad() {
         super.viewDidLoad()
         mainTableView.tableFooterView = UIView()

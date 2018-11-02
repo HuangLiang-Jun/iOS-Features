@@ -44,9 +44,12 @@ class BannerView: UIView, UIScrollViewDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     override func layoutSubviews() {
         self.setup()
     }
+    
+    
     private func setup() {
         if scrollView == nil {
             scrollView = UIScrollView()
@@ -124,7 +127,7 @@ class BannerView: UIView, UIScrollViewDelegate {
     private func reloadImage() {
         derect = .none
         
-        let didScroll = (scrollView!.contentOffset.x / scrollView!.bounds.width) == 1
+        let didScroll = (scrollView!.contentOffset.x / scrollView!.bounds.width) != 1
         
         if !didScroll { return }
         
@@ -140,9 +143,11 @@ class BannerView: UIView, UIScrollViewDelegate {
         scrollView?.contentOffset = CGPoint(x: scrollView!.bounds.size.width,
                                             y: 0)
         
+        pageControl?.currentPage = currentIndex
+        
     }
     
-    
+    // MARK: - Timer
     private func timerStart() {
         
         if images.count <= 1 { return }
