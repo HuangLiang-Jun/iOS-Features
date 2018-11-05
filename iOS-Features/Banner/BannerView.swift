@@ -39,6 +39,7 @@ class BannerView: UIView, UIScrollViewDelegate {
         super.init(frame: .zero)
         self.images = images
         
+        
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -149,8 +150,9 @@ class BannerView: UIView, UIScrollViewDelegate {
     
     // MARK: - Timer
     private func timerStart() {
-        
         if images.count <= 1 { return }
+        
+        if animationTimer != nil && animationTimer!.isValid { return }
         
         animationTimer = Timer.scheduledTimer(timeInterval: interval,
                                               target: self,
@@ -170,6 +172,9 @@ class BannerView: UIView, UIScrollViewDelegate {
     
     }
     
+    func stopTimer() {
+        animationTimer?.invalidate()
+    }
     
     
     // MARK:- UIScrollView delegate
@@ -214,7 +219,7 @@ class BannerView: UIView, UIScrollViewDelegate {
     
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        animationTimer?.invalidate()
+        stopTimer()
     }
     
     
