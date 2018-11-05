@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="leu-Oo-dTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1115" y="-644"/>
+            <point key="canvasLocation" x="1481" y="-636"/>
         </scene>
         <!--Easy Banner View Controller-->
         <scene sceneID="PxO-ij-Kx0">
@@ -113,6 +113,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2257" y="99"/>
+        </scene>
+        <!--Badge-->
+        <scene sceneID="diL-ZU-eYD">
+            <objects>
+                <viewController title="Badge" id="rsh-OQ-MEv" customClass="BadgeViewController" customModule="iOS_Features" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2au-0q-ct7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="4gH-JB-rFs">
+                                <rect key="frame" x="140.5" y="319" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperPressed:" destination="rsh-OQ-MEv" eventType="valueChanged" id="Epr-cX-Iaj"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4gH-JB-rFs" firstAttribute="centerY" secondItem="2au-0q-ct7" secondAttribute="centerY" id="6Hc-Z3-KTb"/>
+                            <constraint firstItem="4gH-JB-rFs" firstAttribute="centerX" secondItem="2au-0q-ct7" secondAttribute="centerX" id="qhq-mF-Wok"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YCL-wL-VJ0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJA-zS-4Dl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="925"/>
         </scene>
         <!--Keychain View Controller-->
         <scene sceneID="95x-kj-ARQ">
@@ -198,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2o-TS-awM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2257" y="850"/>
+            <point key="canvasLocation" x="-391" y="926"/>
         </scene>
         <!--Main-->
         <scene sceneID="8de-px-fUj">
@@ -232,11 +259,12 @@
                         <segue destination="HfS-ka-2jf" kind="show" identifier="Keychain" id="Kef-AU-xhZ"/>
                         <segue destination="xqT-dk-clo" kind="show" identifier="CollectionViewBanner" id="rbM-XI-VY6"/>
                         <segue destination="HhV-P3-jse" kind="show" identifier="ScrollViewBanner" id="oSc-Ua-uFj"/>
+                        <segue destination="rsh-OQ-MEv" kind="show" identifier="Badge" id="wMf-fd-Rtw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IE-1V-ji9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1481" y="99"/>
+            <point key="canvasLocation" x="-391" y="99"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jpm-qD-8Vy">
@@ -254,7 +282,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLV-Dq-IV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="99"/>
+            <point key="canvasLocation" x="-1129" y="99"/>
         </scene>
     </scenes>
 </document>

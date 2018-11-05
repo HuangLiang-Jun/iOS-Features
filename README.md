@@ -5,3 +5,4 @@
 * Keychain
 * CollectionView Banner
 * ScrollView Banner
+* Badge(NavigationBarItem)

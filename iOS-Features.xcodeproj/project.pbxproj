@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101676D221900F4E0050E41C /* UIbarButtonItem+Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101676D121900F4E0050E41C /* UIbarButtonItem+Badge.swift */; };
+		101676D4219010760050E41C /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101676D3219010760050E41C /* BadgeViewController.swift */; };
 		101D11032186DC030041427B /* EasyBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D11022186DC030041427B /* EasyBannerViewController.swift */; };
 		101D11062186DD7B0041427B /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D11052186DD7B0041427B /* Extension+UIView.swift */; };
 		101D11082186DF880041427B /* EasyBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101D11072186DF880041427B /* EasyBannerTableViewCell.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		101676D121900F4E0050E41C /* UIbarButtonItem+Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIbarButtonItem+Badge.swift"; sourceTree = "<group>"; };
+		101676D3219010760050E41C /* BadgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
 		101D10FF2186D8DE0041427B /* iOS-Features.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-Features.entitlements"; sourceTree = "<group>"; };
 		101D11022186DC030041427B /* EasyBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBannerViewController.swift; sourceTree = "<group>"; };
 		101D11052186DD7B0041427B /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
@@ -77,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101676D021900F200050E41C /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				101676D3219010760050E41C /* BadgeViewController.swift */,
+				101676D121900F4E0050E41C /* UIbarButtonItem+Badge.swift */,
+			);
+			name = Badge;
+			sourceTree = "<group>";
+		};
 		101D11012186DB8D0041427B /* EasyBanner */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +152,7 @@
 				101D11012186DB8D0041427B /* EasyBanner */,
 				107AE848218317800048A64E /* QRCode */,
 				107AE83F2182C87D0048A64E /* Keychain */,
+				101676D021900F200050E41C /* Badge */,
 				107AE849218317960048A64E /* SupportingFile */,
 			);
 			path = "iOS-Features";
@@ -274,9 +288,11 @@
 				1059FA18217EB58900CB90B9 /* ViewController.swift in Sources */,
 				101D11082186DF880041427B /* EasyBannerTableViewCell.swift in Sources */,
 				107AE8412182C8930048A64E /* KeychainViewController.swift in Sources */,
+				101676D4219010760050E41C /* BadgeViewController.swift in Sources */,
 				1059FA16217EB58900CB90B9 /* AppDelegate.swift in Sources */,
 				10311B8B218C1957006024D3 /* BannerView.swift in Sources */,
 				107AE8472183148A0048A64E /* MainViewController.swift in Sources */,
+				101676D221900F4E0050E41C /* UIbarButtonItem+Badge.swift in Sources */,
 				107AE84D2183182E0048A64E /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
