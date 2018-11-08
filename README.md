@@ -6,3 +6,4 @@
 * CollectionView Banner
 * ScrollView Banner
 * Badge(NavigationBarItem)
+* Draw Circle

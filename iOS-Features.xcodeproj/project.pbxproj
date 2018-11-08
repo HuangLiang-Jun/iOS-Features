@@ -20,6 +20,8 @@
 		1059FA1B217EB58900CB90B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1059FA19217EB58900CB90B9 /* Main.storyboard */; };
 		1059FA1D217EB58A00CB90B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1059FA1C217EB58A00CB90B9 /* Assets.xcassets */; };
 		1059FA20217EB58A00CB90B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1059FA1E217EB58A00CB90B9 /* LaunchScreen.storyboard */; };
+		106B0C0121941774007D9B34 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106B0C0021941774007D9B34 /* CircleView.swift */; };
+		106B0C03219417C9007D9B34 /* DrawCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106B0C02219417C9007D9B34 /* DrawCircleViewController.swift */; };
 		107AE8412182C8930048A64E /* KeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107AE8402182C8930048A64E /* KeychainViewController.swift */; };
 		107AE8432182F3A80048A64E /* HLQRCodeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107AE8422182F3A80048A64E /* HLQRCodeSDK.framework */; };
 		107AE8442182F3A80048A64E /* HLQRCodeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107AE8422182F3A80048A64E /* HLQRCodeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -61,6 +63,8 @@
 		1059FA1C217EB58A00CB90B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1059FA1F217EB58A00CB90B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1059FA21217EB58A00CB90B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		106B0C0021941774007D9B34 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		106B0C02219417C9007D9B34 /* DrawCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCircleViewController.swift; sourceTree = "<group>"; };
 		107AE8402182C8930048A64E /* KeychainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
 		107AE8422182F3A80048A64E /* HLQRCodeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HLQRCodeSDK.framework; sourceTree = "<group>"; };
 		107AE8462183148A0048A64E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -153,9 +157,19 @@
 				107AE848218317800048A64E /* QRCode */,
 				107AE83F2182C87D0048A64E /* Keychain */,
 				101676D021900F200050E41C /* Badge */,
+				106B0BFF21941746007D9B34 /* DrawCircle */,
 				107AE849218317960048A64E /* SupportingFile */,
 			);
 			path = "iOS-Features";
+			sourceTree = "<group>";
+		};
+		106B0BFF21941746007D9B34 /* DrawCircle */ = {
+			isa = PBXGroup;
+			children = (
+				106B0C02219417C9007D9B34 /* DrawCircleViewController.swift */,
+				106B0C0021941774007D9B34 /* CircleView.swift */,
+			);
+			path = DrawCircle;
 			sourceTree = "<group>";
 		};
 		107AE83F2182C87D0048A64E /* Keychain */ = {
@@ -292,7 +306,9 @@
 				1059FA16217EB58900CB90B9 /* AppDelegate.swift in Sources */,
 				10311B8B218C1957006024D3 /* BannerView.swift in Sources */,
 				107AE8472183148A0048A64E /* MainViewController.swift in Sources */,
+				106B0C03219417C9007D9B34 /* DrawCircleViewController.swift in Sources */,
 				101676D221900F4E0050E41C /* UIbarButtonItem+Badge.swift in Sources */,
+				106B0C0121941774007D9B34 /* CircleView.swift in Sources */,
 				107AE84D2183182E0048A64E /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

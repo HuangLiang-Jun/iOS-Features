@@ -32,7 +32,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                     Feature(displayName: "Keychain", segueID: "Keychain"),
                     Feature(displayName: "CollectionView Banner", segueID: "CollectionViewBanner"),
                     Feature(displayName: "ScrollView Banner", segueID: "ScrollViewBanner"),
-                    Feature(displayName: "Badge", segueID: "Badge")]
+                    Feature(displayName: "Badge", segueID: "Badge"),
+                    Feature(displayName: "Draw Circle", segueID: "drawCircle")]
     
     
     override func viewDidLoad() {

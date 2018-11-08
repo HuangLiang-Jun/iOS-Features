@@ -114,6 +114,47 @@
             </objects>
             <point key="canvasLocation" x="2257" y="99"/>
         </scene>
+        <!--Draw Circle View Controller-->
+        <scene sceneID="VWS-l3-rMf">
+            <objects>
+                <viewController id="5Hq-CV-U12" customClass="DrawCircleViewController" customModule="iOS_Features" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMm-qW-hee">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="92J-Fg-jiP">
+                                <rect key="frame" x="54.5" y="318.5" width="266.5" height="31"/>
+                                <connections>
+                                    <action selector="slideVIewPressed:" destination="5Hq-CV-U12" eventType="valueChanged" id="006-LR-Ob6"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7K-Bp-03U">
+                                <rect key="frame" x="87.5" y="88.5" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="93P-qR-liT"/>
+                                    <constraint firstAttribute="width" constant="200" id="fs1-Hi-pEa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="92J-Fg-jiP" firstAttribute="top" secondItem="c7K-Bp-03U" secondAttribute="bottom" constant="30" id="FBK-lG-agy"/>
+                            <constraint firstItem="92J-Fg-jiP" firstAttribute="centerX" secondItem="OMm-qW-hee" secondAttribute="centerX" id="XcD-Ak-bkM"/>
+                            <constraint firstItem="92J-Fg-jiP" firstAttribute="width" secondItem="OMm-qW-hee" secondAttribute="width" multiplier="0.7" id="cGY-jZ-9l6"/>
+                            <constraint firstItem="92J-Fg-jiP" firstAttribute="centerY" secondItem="OMm-qW-hee" secondAttribute="centerY" id="jKH-3L-eEy"/>
+                            <constraint firstItem="c7K-Bp-03U" firstAttribute="centerX" secondItem="OMm-qW-hee" secondAttribute="centerX" id="tH9-A3-8f2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YxK-gt-w7F"/>
+                    </view>
+                    <connections>
+                        <outlet property="circleContentView" destination="c7K-Bp-03U" id="6M3-uO-38F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6e9-F1-w78" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1302" y="925"/>
+        </scene>
         <!--Badge-->
         <scene sceneID="diL-ZU-eYD">
             <objects>
@@ -139,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJA-zS-4Dl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1751" y="925"/>
+            <point key="canvasLocation" x="414" y="925"/>
         </scene>
         <!--Keychain View Controller-->
         <scene sceneID="95x-kj-ARQ">
@@ -260,6 +301,7 @@
                         <segue destination="xqT-dk-clo" kind="show" identifier="CollectionViewBanner" id="rbM-XI-VY6"/>
                         <segue destination="HhV-P3-jse" kind="show" identifier="ScrollViewBanner" id="oSc-Ua-uFj"/>
                         <segue destination="rsh-OQ-MEv" kind="show" identifier="Badge" id="wMf-fd-Rtw"/>
+                        <segue destination="5Hq-CV-U12" kind="show" identifier="drawCircle" id="Q4k-MX-J92"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IE-1V-ji9" userLabel="First Responder" sceneMemberID="firstResponder"/>
