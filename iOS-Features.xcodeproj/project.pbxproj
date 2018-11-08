@@ -22,24 +22,55 @@
 		1059FA20217EB58A00CB90B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1059FA1E217EB58A00CB90B9 /* LaunchScreen.storyboard */; };
 		106B0C0121941774007D9B34 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106B0C0021941774007D9B34 /* CircleView.swift */; };
 		106B0C03219417C9007D9B34 /* DrawCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106B0C02219417C9007D9B34 /* DrawCircleViewController.swift */; };
+		106B0C1E219425CA007D9B34 /* HLQRCodeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106B0C1821942516007D9B34 /* HLQRCodeSDK.framework */; };
+		106B0C1F219425CA007D9B34 /* HLQRCodeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 106B0C1821942516007D9B34 /* HLQRCodeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		106B0C23219425CE007D9B34 /* HLLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106B0C1121942503007D9B34 /* HLLog.framework */; };
+		106B0C24219425CE007D9B34 /* HLLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 106B0C1121942503007D9B34 /* HLLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107AE8412182C8930048A64E /* KeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107AE8402182C8930048A64E /* KeychainViewController.swift */; };
-		107AE8432182F3A80048A64E /* HLQRCodeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107AE8422182F3A80048A64E /* HLQRCodeSDK.framework */; };
-		107AE8442182F3A80048A64E /* HLQRCodeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 107AE8422182F3A80048A64E /* HLQRCodeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		107AE8472183148A0048A64E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107AE8462183148A0048A64E /* MainViewController.swift */; };
 		107AE84D2183182E0048A64E /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107AE84C2183182E0048A64E /* MainTableViewCell.swift */; };
-		10CDD9912181689300D7C940 /* HLLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CDD9902181689300D7C940 /* HLLog.framework */; };
-		10CDD9922181689300D7C940 /* HLLog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10CDD9902181689300D7C940 /* HLLog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		106B0C1021942503007D9B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 106B0C0B21942502007D9B34 /* HLLog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 10CDD945218067E700D7C940;
+			remoteInfo = HLLog;
+		};
+		106B0C1721942516007D9B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 106B0C1221942516007D9B34 /* HLQRCodeSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 10CDD8DD218017EE00D7C940;
+			remoteInfo = HLQRCodeSDK;
+		};
+		106B0C20219425CA007D9B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 106B0C1221942516007D9B34 /* HLQRCodeSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CDD8DC218017EE00D7C940;
+			remoteInfo = HLQRCodeSDK;
+		};
+		106B0C25219425CE007D9B34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 106B0C0B21942502007D9B34 /* HLLog.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CDD944218067E700D7C940;
+			remoteInfo = HLLog;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		10CDD9122180438900D7C940 /* Embed Frameworks */ = {
+		106B0C22219425CB007D9B34 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				10CDD9922181689300D7C940 /* HLLog.framework in Embed Frameworks */,
-				107AE8442182F3A80048A64E /* HLQRCodeSDK.framework in Embed Frameworks */,
+				106B0C1F219425CA007D9B34 /* HLQRCodeSDK.framework in Embed Frameworks */,
+				106B0C24219425CE007D9B34 /* HLLog.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,11 +96,11 @@
 		1059FA21217EB58A00CB90B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		106B0C0021941774007D9B34 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		106B0C02219417C9007D9B34 /* DrawCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCircleViewController.swift; sourceTree = "<group>"; };
+		106B0C0B21942502007D9B34 /* HLLog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HLLog.xcodeproj; path = HLLog/HLLog.xcodeproj; sourceTree = "<group>"; };
+		106B0C1221942516007D9B34 /* HLQRCodeSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HLQRCodeSDK.xcodeproj; path = HLQRCodeSDK/HLQRCodeSDK.xcodeproj; sourceTree = "<group>"; };
 		107AE8402182C8930048A64E /* KeychainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
-		107AE8422182F3A80048A64E /* HLQRCodeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HLQRCodeSDK.framework; sourceTree = "<group>"; };
 		107AE8462183148A0048A64E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		107AE84C2183182E0048A64E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
-		10CDD9902181689300D7C940 /* HLLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HLLog.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10CDD9912181689300D7C940 /* HLLog.framework in Frameworks */,
-				107AE8432182F3A80048A64E /* HLQRCodeSDK.framework in Frameworks */,
+				106B0C1E219425CA007D9B34 /* HLQRCodeSDK.framework in Frameworks */,
+				106B0C23219425CE007D9B34 /* HLLog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +164,8 @@
 		1059FA09217EB58900CB90B9 = {
 			isa = PBXGroup;
 			children = (
-				107AE8422182F3A80048A64E /* HLQRCodeSDK.framework */,
-				10CDD9902181689300D7C940 /* HLLog.framework */,
+				106B0C1221942516007D9B34 /* HLQRCodeSDK.xcodeproj */,
+				106B0C0B21942502007D9B34 /* HLLog.xcodeproj */,
 				1059FA14217EB58900CB90B9 /* iOS-Features */,
 				1059FA13217EB58900CB90B9 /* Products */,
 			);
@@ -170,6 +201,22 @@
 				106B0C0021941774007D9B34 /* CircleView.swift */,
 			);
 			path = DrawCircle;
+			sourceTree = "<group>";
+		};
+		106B0C0C21942502007D9B34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				106B0C1121942503007D9B34 /* HLLog.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		106B0C1321942516007D9B34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				106B0C1821942516007D9B34 /* HLQRCodeSDK.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		107AE83F2182C87D0048A64E /* Keychain */ = {
@@ -228,11 +275,13 @@
 				1059FA0E217EB58900CB90B9 /* Sources */,
 				1059FA0F217EB58900CB90B9 /* Frameworks */,
 				1059FA10217EB58900CB90B9 /* Resources */,
-				10CDD9122180438900D7C940 /* Embed Frameworks */,
+				106B0C22219425CB007D9B34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				106B0C21219425CA007D9B34 /* PBXTargetDependency */,
+				106B0C26219425CE007D9B34 /* PBXTargetDependency */,
 			);
 			name = "iOS-Features";
 			productName = QRCodeReader;
@@ -270,12 +319,39 @@
 			mainGroup = 1059FA09217EB58900CB90B9;
 			productRefGroup = 1059FA13217EB58900CB90B9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 106B0C0C21942502007D9B34 /* Products */;
+					ProjectRef = 106B0C0B21942502007D9B34 /* HLLog.xcodeproj */;
+				},
+				{
+					ProductGroup = 106B0C1321942516007D9B34 /* Products */;
+					ProjectRef = 106B0C1221942516007D9B34 /* HLQRCodeSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1059FA11217EB58900CB90B9 /* iOS-Features */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		106B0C1121942503007D9B34 /* HLLog.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HLLog.framework;
+			remoteRef = 106B0C1021942503007D9B34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		106B0C1821942516007D9B34 /* HLQRCodeSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HLQRCodeSDK.framework;
+			remoteRef = 106B0C1721942516007D9B34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1059FA10217EB58900CB90B9 /* Resources */ = {
@@ -314,6 +390,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		106B0C21219425CA007D9B34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HLQRCodeSDK;
+			targetProxy = 106B0C20219425CA007D9B34 /* PBXContainerItemProxy */;
+		};
+		106B0C26219425CE007D9B34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HLLog;
+			targetProxy = 106B0C25219425CE007D9B34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1059FA19217EB58900CB90B9 /* Main.storyboard */ = {
@@ -454,6 +543,7 @@
 		1059FA25217EB58A00CB90B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iOS-Features/iOS-Features.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +568,7 @@
 		1059FA26217EB58A00CB90B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "iOS-Features/iOS-Features.entitlements";
 				CODE_SIGN_STYLE = Automatic;
